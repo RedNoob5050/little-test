@@ -1,10 +1,14 @@
 local Players = game:GetService("Players")
 local RepStore = game:GetService("ReplicatedStorage")
+local StarterPlayer = game:GetService("StarterPlayer")
+
 
 local ClientFiles = RepStore.Client
 
-Players.PlayerAdded:Connect(function(Plr)
-    local ClientClone = ClientFiles:Clone()
+for _, v in pairs(ClientFiles:GetChildren()) do
+    v.Parent = StarterPlayer.StarterPlayerScripts
+end
 
-    ClientFiles.Parent = Plr:WaitForChild("PlayerScripts")
+Players.PlayerAdded:Connect(function(Plr)
+    Plr:LoadCharacter()
 end)
