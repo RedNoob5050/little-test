@@ -1,5 +1,5 @@
 local RepStore = game:GetService("ReplicatedStorage")
 
-local PrintHello = require(Repstore.Shared.Hello)
+local PrintHello = require(RepStore.Shared.Hello)
 
 PrintHello()
