@@ -10,5 +10,5 @@ for _, v in pairs(ClientFiles:GetChildren()) do
 end
 
 Players.PlayerAdded:Connect(function(Plr)
-    Plr:LoadCharacter()
+    Plr:LoadCharacter() -- just to be sure that they get the starter scripts
 end)
