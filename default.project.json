@@ -5,16 +5,16 @@
 
     "ReplicatedStorage": {
       "Modules": {
-        "$path": "src/shared"
+        "$path": "src/Modules"
       },
       "Client": {
-        "$path": "src/client"
+        "$path": "src/ClientScripts"
       }
     },
 
     "ServerScriptService": {
       "Server": {
-        "$path": "src/server"
+        "$path": "src/ServerScripts"
       }
     },
 
