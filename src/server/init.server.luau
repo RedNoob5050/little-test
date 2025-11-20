@@ -1,1 +1,5 @@
-print("Hello world, from server!")
+local RepStore = game:GetService("ReplicatedStorage")
+
+local PrintHello = require(Repstore.Shared.Hello)
+
+PrintHello()
